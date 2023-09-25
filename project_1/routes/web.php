@@ -29,3 +29,15 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::view('info', 'info');
+
+Route::get('userinfo', function(){
+    return view('info', [
+        'firstName' => 'Janusz',
+        'lastName' => 'Nowak',
+        'city' => 'Gniezno'
+    ]);
+});
+
+Route::redirect('witam', '/');
