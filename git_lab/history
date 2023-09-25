@@ -1,0 +1,25 @@
+    1  mkdir git_lab
+    2  cd git_lab
+    3  ls
+    4  echo "Nadpisanie" > file
+    5  cat file
+    6  echo "dopisanie" >> file
+    7  cat file
+    8  vim file
+    9  vim file
+   10  cat file
+   11  ls -l
+   12  ls -l > file
+   13  git status
+   14  cd .
+   15  cd ..
+   16  git status
+   17  git add *
+   18  git status
+   19  git commit -m "New dir"
+   20  git config --global user.email "jakub.walczak@uczen.zsk.poznan.pl"
+   21  git config --global user.name "JWalczak123"
+   22  git commit -m "New dir"
+   23  git status
+   24  cd git_lab
+   25  history > history
